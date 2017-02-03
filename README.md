@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/juju4/ansible-redis-leveldb.svg?branch=master)](https://travis-ci.org/juju4/ansible-redis-leveldb)
+[![Build Status - Master](https://travis-ci.org/juju4/ansible-redis-leveldb.svg?branch=master)](https://travis-ci.org/juju4/ansible-redis-leveldb)
+[![Build Status - Devel](https://travis-ci.org/juju4/ansible-redis-leveldb.svg?branch=devel)](https://travis-ci.org/juju4/ansible-redis-leveldb/branches)
 # Redis-leveldb ansible role
 
 Ansible role to setup Redis-leveldb, A redis-protocol compatible frontend to google's leveldb
@@ -12,6 +13,7 @@ Installation is from source
 It was tested on the following versions:
  * 1.9
  * 2.0
+ * 2.2
 
 ### Operating systems
 
