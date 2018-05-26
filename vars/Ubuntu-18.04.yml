@@ -1,0 +1,11 @@
+---
+
+redis_leveldb_deps:
+  - make
+  - gcc
+  - g++
+  - libev-dev
+  - libgmp-dev
+  - libsnappy-dev
+  - perl
+  - libredis-perl
