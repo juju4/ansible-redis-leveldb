@@ -2,19 +2,23 @@
 
 - name: git clone redis-leveldb
   git:
-    repo=https://github.com/KDr2/redis-leveldb.git
-    dest={{ toolsetdir }}/redis-leveldb
+    repo: https://github.com/KDr2/redis-leveldb.git
+    dest: "{{ toolsetdir }}/redis-leveldb"
+    version: "{{ redis_leveldb_version | default('HEAD') }}"
 
 - name: redis-leveldb dependencies
-  package: name={{item}} state=present
-  with_items: "{{ redis_leveldb_deps }}"
+  package:
+    name: "{{ redis_leveldb_deps }}"
+    state: present
 
 - name: compile redis-leveldb
-  command: "{{ item }} chdir={{ toolsetdir }}/redis-leveldb creates={{ toolsetdir }}/redis-leveldb/redis-leveldb"
+  command: "{{ item }}"
+  args:
+    chdir: "{{ toolsetdir }}/redis-leveldb"
+    creates: "{{ toolsetdir }}/redis-leveldb/redis-leveldb"
   with_items:
     - make
 #    - make test
 
 - name: install redis-leveldb
   copy: src={{ toolsetdir }}/redis-leveldb/redis-leveldb dest=/usr/local/bin/redis-leveldb mode=0755 remote_src=yes
-
