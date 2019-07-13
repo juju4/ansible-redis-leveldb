@@ -17,8 +17,7 @@ fi
 [ ! -d $rolesdir/kbrebanov.virtualbox ] && git clone https://github.com/kbrebanov/ansible-virtualbox.git $rolesdir/kbrebanov.virtualbox
 ## galaxy naming: kitchen fails to transfer symlink folder
 #[ ! -e $rolesdir/juju4.redis-leveldb ] && ln -s ansible-redis-leveldb $rolesdir/juju4.redis-leveldb
-[ ! -e $rolesdir/juju4.redis-leveldb ] && cp -R $rolesdir/ansible-redis-leveldb $rolesdir/juju4.redis-leveldb
+[ ! -e $rolesdir/juju4.redis_leveldb ] && cp -R $rolesdir/ansible-redis-leveldb $rolesdir/juju4.redis_leveldb
 
 ## don't stop build on this script return code
 true
-

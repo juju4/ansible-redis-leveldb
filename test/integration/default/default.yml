@@ -2,5 +2,4 @@
 
 - hosts: all
   roles:
-    - juju4.redis-leveldb
-
+    - juju4.redis_leveldb
