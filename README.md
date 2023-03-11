@@ -1,3 +1,6 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+# DEPRECATED/LOOKING FOR MAINTAINERS -> to be archived soon
+
 [![Build Status - Master](https://travis-ci.org/juju4/ansible-redis-leveldb.svg?branch=master)](https://travis-ci.org/juju4/ansible-redis-leveldb)
 [![Build Status - Devel](https://travis-ci.org/juju4/ansible-redis-leveldb.svg?branch=devel)](https://travis-ci.org/juju4/ansible-redis-leveldb/branches)
 # Redis-leveldb ansible role
